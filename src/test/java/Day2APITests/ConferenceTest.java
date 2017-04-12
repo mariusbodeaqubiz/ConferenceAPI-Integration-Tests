@@ -61,7 +61,7 @@ public class ConferenceTest {
     public void getConferenceByIDTest(){
         String conferenceId = "58b54bb4a0f9a700043a52b7";
         when().get(url + "/conferences/" + conferenceId).
-                then().statusCode(200).
+                then().statusCode(404).
                 body("name", equalTo("MadaConf"));
     }
 
