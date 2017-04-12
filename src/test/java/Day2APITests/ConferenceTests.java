@@ -1,4 +1,4 @@
-package Day2API;
+package Day2APITests;
 
 import Day2.Conference;
 import Day2.Location;
@@ -48,7 +48,7 @@ public class ConferenceTests {
     }
 
     @Test
-    public void getAllConferences() {
+    public void getAllConferencesTest() {
 
         int numOfConferences = 17;
 
@@ -66,7 +66,7 @@ public class ConferenceTests {
     }
 
     @Test
-    public void getConferenceByName(){
+    public void getConferenceByNameTest(){
         String conferenceName = "Basics of C++";
         when().get(url + "/conferences/" + conferenceName).
                 then().statusCode(200).
