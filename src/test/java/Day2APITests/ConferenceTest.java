@@ -19,7 +19,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 /**
  * Created by User on 2/28/2017.
  */
-public class ConferenceTests {
+public class ConferenceTest {
 
     private static String url = "https://testbashnl.herokuapp.com";
 
