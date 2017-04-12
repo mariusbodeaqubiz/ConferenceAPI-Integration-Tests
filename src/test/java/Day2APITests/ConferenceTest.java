@@ -54,7 +54,7 @@ public class ConferenceTest {
 
         when().get(url + "/conferences").
         then().statusCode(200).
-               body("page.totalElements", equalTo(numOfConferences));
+               body("page.totalElements", equalTo("[]"));
     }
 
     @Test
