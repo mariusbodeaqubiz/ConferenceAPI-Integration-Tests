@@ -58,7 +58,7 @@ public class ConferenceTest {
     }
 
     @Test
-    public void getConferenceByID(){
+    public void getConferenceByIDTest(){
         String conferenceId = "58b54bb4a0f9a700043a52b7";
         when().get(url + "/conferences/" + conferenceId).
                 then().statusCode(200).
@@ -105,7 +105,7 @@ public class ConferenceTest {
     }
 
     @Test
-    public void createConference(){
+    public void createConferenceTest(){
 
         given().
             header("Authorization","Bearer " + token).
@@ -117,7 +117,7 @@ public class ConferenceTest {
     }
 
     @Test
-    public void loginAsAdmin(){
+    public void loginAsAdminTest(){
         given().
         contentType(ContentType.URLENC).
                 formParam("grant_type", "password").
